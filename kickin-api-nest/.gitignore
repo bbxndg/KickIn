@@ -1,0 +1,15 @@
+# Generated dependencies and build/test output stay local.
+node_modules/
+dist/
+coverage/
+
+# Local configuration may contain secrets.
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files.
+.idea/
+.vscode/
+.DS_Store
+*.log
