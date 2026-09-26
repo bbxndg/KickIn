@@ -27,3 +27,12 @@ describe('AppController (e2e)', () => {
     await app.close();
   });
 });
+
+/* Explanation of the code above:
+ * - beforeEach() creates a testing module from the real AppModule and starts
+ *   an initialized Nest application for each test.
+ * - Supertest sends GET / to the app and checks for HTTP 200 and the greeting
+ *   response, covering module wiring and HTTP routing together.
+ * - afterEach() closes the app so the test does not leave server resources
+ *   running after it finishes.
+ */

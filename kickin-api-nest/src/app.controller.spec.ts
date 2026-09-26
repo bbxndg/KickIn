@@ -20,3 +20,11 @@ describe('AppController', () => {
     });
   });
 });
+
+/* Explanation of the code above:
+ * - This unit test builds a small Nest testing module with only AppController
+ *   and AppService, then retrieves the controller from that module.
+ * - The test calls getHello() directly and checks its returned value, so it
+ *   tests controller behavior without opening an HTTP server.
+ * - The end-to-end HTTP test lives separately in test/app.e2e-spec.ts.
+ */
