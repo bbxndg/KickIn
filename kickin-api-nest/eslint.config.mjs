@@ -33,3 +33,12 @@ export default tseslint.config(
     },
   },
 );
+
+/* Explanation of the configuration above:
+ * - It combines ESLint's recommended rules, TypeScript-aware rules, and the
+ *   Prettier integration into one flat configuration.
+ * - Node and Jest globals are enabled, and projectService lets typed lint
+ *   rules use the TypeScript project settings.
+ * - The final rules customize a few checks for this starter; this file is
+ *   configuration only and is not part of the running API request path.
+ */
